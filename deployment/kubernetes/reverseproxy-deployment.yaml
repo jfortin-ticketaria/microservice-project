@@ -16,7 +16,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-        - image: reverseproxy
+        - image: jfortinticketaria/reverseproxy
           name: reverseproxy
           imagePullPolicy: Always
           resources:

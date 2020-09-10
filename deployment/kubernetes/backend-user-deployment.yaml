@@ -16,7 +16,7 @@ spec:
         app: backend-user
     spec:
       containers:
-        - image: udagram-api-user
+        - image: jfortinticketaria/udagram-backend-user-api
           name: backend-user
           imagePullPolicy: Always
           resources:
