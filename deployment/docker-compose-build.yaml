@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: jfortinticketaria/reverseproxy
+  backend_user:
+    build:
+      context: ../udagram-api/user-api
+    image: jfortinticketaria/udagram-backend-user-api
+  backend_feed:
+    build:
+      context: ../udagram-api/feed-api
+    image: jfortinticketaria/udagram-backend-api
+  frontend:
+    build:
+      context: ../udagram-frontend
+    image: jfortinticketaria/udagram-frontend
